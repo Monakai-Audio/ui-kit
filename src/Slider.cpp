@@ -47,7 +47,7 @@ void Slider::sliderValueChanged(juce::Slider* /*slider*/)
 void Slider::paint(juce::Graphics& g)
 {
     const auto bounds = getLocalBounds().toFloat().reduced(2.0f);
-    const auto trackBounds = bounds.withSizeKeepingCentre(bounds.getWidth(), 4.0f);
+    auto trackBounds = bounds.withSizeKeepingCentre(bounds.getWidth(), 4.0f);
 
     g.setColour(trackColour);
     g.fillRoundedRectangle(trackBounds, 2.0f);
