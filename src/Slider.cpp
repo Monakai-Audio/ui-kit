@@ -53,7 +53,7 @@ void Slider::paint(juce::Graphics& g)
     g.fillRoundedRectangle(trackBounds, 2.0f);
 
     const float proportion = static_cast<float>(slider_.valueToProportionOfLength(slider_.getValue()));
-    auto filledBounds = trackBounds.removeFromLeft(trackBounds.getWidth() * proportion);
+    auto filledBounds = trackBounds.withWidth(trackBounds.getWidth() * proportion);
 
     g.setColour(thumbColour);
     g.fillRoundedRectangle(filledBounds, 2.0f);
