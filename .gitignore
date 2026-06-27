@@ -1,0 +1,40 @@
+# Build outputs
+/build*/
+cmake-build-*/
+out/
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.vst3
+
+# IDE
+.vs/
+*.user
+*.suo
+*.userprefs
+.idea/
+*.code-workspace
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# JUCE
+JuceLibraryCode/
+Builds/
+*.jucer
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
